@@ -6,8 +6,3 @@ function toggleMenu() {
 }
 
 
-    // window.onload = function() {
-    //     var numberOfPages = 3;
-    //     var num = Math.round(Math.random() * numberOfPages);
-    //     window.location.href = "/" + num + ".html";
-    // };    
