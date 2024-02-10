@@ -7,6 +7,7 @@
     <title>Rahul Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="form.css" />
     <link rel="icon" type="image/x-icon" href="assets/rahul.jpg">
 
   </head>
@@ -43,6 +44,32 @@
         </div>
       </div>
     </nav>
+
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+          
+          <span class="close">&times;</span>
+          <div class="container">
+              <h2 class="y">Feedback </h2>
+              <form id="myForm" action="https://script.google.com/macros/s/AKfycbx5ad0Ys8fNzppFdx-OajuVyXD-K9rupPgddcgOb-aNAq1yvSazUaCSFyUI89ACXIPN/exec" method="POST" onsubmit="showLoader()">
+                  <label for="name" class="y">Name:</label>
+                  <input type="text" id="name" class="y" name="your-name" placeholder="Your name">
+      
+                  <label for="message" class="y">Message:</label>
+                  <textarea id="message" class="y" name="message" rows="5" placeholder="Your message"></textarea>
+      
+                  <input type="submit" value="Submit">
+              </form>
+              <!-- Loading animation -->
+              <div id="loader" class="loader" style="display: none;"></div>
+          </div>
+      </div>
+  
+  </div>
+
+    
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/rahul.jpg" alt="rahul" />
@@ -357,11 +384,15 @@
                 Live Demo
               </button>
             </div>
+            
+            
           </div>
+          
         </div>
       </div>
    
     </section>
+    
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
